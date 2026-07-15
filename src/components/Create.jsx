@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-// import Navbar from "./Navbar";
+import Navbar from "./Navbar";
 
 const Create = () => {
   const [message, setMessage] = useState("");
@@ -38,7 +38,7 @@ const Create = () => {
 
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
 
       <div className="container mt-4">
         <div className="row justify-content-center">
