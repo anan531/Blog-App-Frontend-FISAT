@@ -4,14 +4,25 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import Signup from './components/Signup'
+import Signin from './components/Signin'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Create from './components/Create'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-     
-     <Signup/>
+    {/* <Signup/>
+     <Signin/> */}
+  <BrowserRouter>
+  <Routes>
+  
+    <Route path="/" element={<Signin/>}/>
+    <Route path="/signup" element={<Signup/>}/>
+    <Route path="/create" element={<Create/>}/>
+    </Routes>
+  </BrowserRouter>
     </>
   )
 }

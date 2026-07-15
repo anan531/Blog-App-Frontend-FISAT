@@ -93,7 +93,8 @@ const Signup = () => {
                     </div>
 
                     <div className="col col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-<button className="btn btn-primary" onClick={readValue}>Back to Login</button>                </div>
+            <a href="/" className="btn-btn-info">Back to Login</a>
+</div>
 
                 </div>
 
